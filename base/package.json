@@ -1,0 +1,22 @@
+{
+  "name": "base",
+  "version": "0.0.1",
+  "description": "This is just a simple table with a text file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingJhames/Node-Road.git"
+  },
+  "author": "codingjhames",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodingJhames/Node-Road/issues"
+  },
+  "homepage": "https://github.com/CodingJhames/Node-Road#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
