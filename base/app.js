@@ -2,6 +2,7 @@
 
 const { createFile } = require('../helpers/multiplicar');
 const argv = require('./config/yargs');
+const colors = require('colors');
 
 
 console.clear();
@@ -17,7 +18,7 @@ console.log( base ); */
 // const base = 5;
 
 createFile( argv.b, argv.l )
-        .then( nombreArchivo => console.log( nombreArchivo, 'creado' ))
+        .then( nombreArchivo => console.log( nombreArchivo.rainbow, 'creado' ))
         .catch( err => console.log(err) );
 
 
