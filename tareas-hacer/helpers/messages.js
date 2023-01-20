@@ -32,8 +32,6 @@ const mostrarMenu = () => {
 
 
     } );
-
-
     
 };
 
@@ -51,11 +49,7 @@ const pause = () => {
             readline.close();
             resolve();
         });
-
-
     }  );
-
-    
 }
 
 module.exports = {
