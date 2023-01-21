@@ -45,7 +45,7 @@ const pause = () => {
             output: process.stdout
         });
     
-        readline.question( `\nPreione ${'ENTER'.green} para continuar\n`, ( opt ) =>{
+        readline.question( `\nPresione ${'ENTER'.green} para continuar\n`, ( opt ) =>{
             readline.close();
             resolve();
         });
@@ -54,7 +54,7 @@ const pause = () => {
 
 module.exports = {
     mostrarMenu,
-    pause
+    
 };
 
 
