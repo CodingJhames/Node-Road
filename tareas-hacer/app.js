@@ -1,13 +1,13 @@
 
 import colors from 'colors';
 import { inquiererMenu, pausa } from './helpers/inquirer.js';
-// const { mostrarMenu, pause } = require('./helpers/messages');
+import { Tareas } from './models/tareas.js';
 
-console.clear();
+// const { mostrarMenu, pause } = require('./helpers/messages');
 
 const main = async() => {
     
-    // console.log('Hello Micho');
+    console.log('Hello Micho');
 
     let opt = '';
 
@@ -16,7 +16,7 @@ const main = async() => {
         opt = await inquiererMenu();
         console.log( {opt} );
         // if ( opt !== '0' ) await pause();
-
+        
         await pausa();
 
 
