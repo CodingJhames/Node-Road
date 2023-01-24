@@ -11,31 +11,31 @@ const menuOpts = [
         choices: [
             {
                 value: '1',
-                name: '1. Crear tarea'
+                name: '1.'.blue + 'Crear tarea'
             },
             {
                 value: '2',
-                name: '2. Listar tareas'
+                name: '2.'.blue + 'Listar tareas'
             },
             {
                 value: '3',
-                name: '3. Listar tareas completadas'
+                name: '3.'.blue + 'Listar tareas completadas'
             },
             {
                 value: '4',
-                name: '4. Listar tareas pendientes'
+                name: '4.'.blue + 'Listar tareas pendientes'
             },
             {
                 value: '5',
-                name: '5. Completar tareas'
+                name: '5.'.blue + 'Completar tareas'
             },
             {
                 value: '6',
-                name: '6. Borrar tarea'
+                name: '6.'.blue + 'Borrar tarea'
             },
             {
                 value: '0',
-                name: '0. Salir'
+                name: '0.'.blue + 'Salir'
             }
         ]
     }
@@ -46,7 +46,7 @@ const inquiererMenu = async() => {
 
     console.clear();
     console.log('=========================='.green);
-    console.log('   Select an option');
+    console.log('   Select an option'.blue);
     console.log('==========================\n'.green);
 
     const { option } = await inquirer.prompt(menuOpts);

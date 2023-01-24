@@ -1,7 +1,7 @@
 const { read } = require('fs');
 const { resolve } = require('path');
 
-require('colors');
+import colors from 'colors';
 
 const mostrarMenu = () => {
 
