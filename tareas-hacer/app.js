@@ -1,7 +1,7 @@
 
 import colors from 'colors';
 import { inquiererMenu, pausa, leerInput } from './helpers/inquirer.js';
-import { saveDB } from './helpers/saveFile.js';
+import { readDB, saveDB } from './helpers/saveFile.js';
 import { Tareas } from './models/tareas.js';
 
 // const { mostrarMenu, pause } = require('./helpers/messages');
@@ -12,6 +12,14 @@ const main = async() => {
 
     let opt = '';
     const tareas = new Tareas();
+
+    const tareasDB = readDB();
+
+    if( tareasDB ) {
+        // establecer las tareas
+    }
+
+    await pausa();
 
     do {
         // Imprimir el menú
@@ -28,16 +36,11 @@ const main = async() => {
             break;
         }
 
-        // saveDB( tareas.listadoArr );
-
-        
+        // saveDB( tareas.listadoArr );        
         await pausa();
-
 
     } while ( opt !== '0' );
 
-    
-    
 }
 
 
