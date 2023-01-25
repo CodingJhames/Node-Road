@@ -1,6 +1,7 @@
 
 import colors from 'colors';
 import { inquiererMenu, pausa, leerInput } from './helpers/inquirer.js';
+import { saveDB } from './helpers/saveFile.js';
 import { Tareas } from './models/tareas.js';
 
 // const { mostrarMenu, pause } = require('./helpers/messages');
@@ -26,6 +27,9 @@ const main = async() => {
                 console.log( tareas.listadoArr );
             break;
         }
+
+        // saveDB( tareas.listadoArr );
+
         
         await pausa();
 
