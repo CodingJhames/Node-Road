@@ -17,7 +17,7 @@ console.log( base ); */
 
 // const base = 5;
 
-createFile( argv.b, argv.l )
+createFile( argv.b, argv.l, argv.h )
         .then( nombreArchivo => console.log( nombreArchivo.rainbow, 'creado' ))
         .catch( err => console.log(err) );
 

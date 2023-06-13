@@ -2,13 +2,13 @@
 const fs = require('fs');
 const colors = require('colors/safe');
 
-const createFile = async( base = 5, listar = false ) => {
+const createFile = async( base = 5, listar = false, hasta = 10 ) => {
 
     try {
 
         let salida = '';
 
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i <= hasta; i++) {
                 salida +=`${ base } ${'x'.blue } ${i} = ${ base * i }\n`;
         }
 
@@ -27,7 +27,7 @@ const createFile = async( base = 5, listar = false ) => {
     }
 
 };
-
+app
 module.exports = {
     createFile
 }

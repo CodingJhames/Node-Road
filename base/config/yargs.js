@@ -1,4 +1,4 @@
-
+// const { argv } = require('yargs');
 
 const argv = require('yargs')
 .option('b',{
@@ -12,7 +12,12 @@ const argv = require('yargs')
         type: 'boolean',
         default:  false,
         describe: 'Muestra la tabla en consola'
-        
+})
+.option('h',{
+        alias: 'hasta',
+        type: 'number',
+        default: 10,
+        describe: 'Este es el número límite de la tabla'
 })
 .check( ( argv, options ) => {
         if ( isNaN( argv.b  ) ) {
@@ -20,7 +25,8 @@ const argv = require('yargs')
         }
 
         return true;
-} )
+
+})
 .argv;
 
 
