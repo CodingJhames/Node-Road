@@ -42,8 +42,6 @@ export class Tareas {
         // 2. Realidad : Completada | Pendiente
         // 3. Poder : Completada | Pendiente
 
-        
-
 
     };
 
