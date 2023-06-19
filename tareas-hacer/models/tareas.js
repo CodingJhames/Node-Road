@@ -1,6 +1,5 @@
 import { Tarea } from "./tarea.js";
 
-
 export class Tareas {
 
     _listado = {};
@@ -12,18 +11,21 @@ export class Tareas {
             listado.push( tarea );
         } )
         return listado;
-    } 
-
+    }  
 
     constructor() {
         this._listado = {};
     };
 
-    crearTarea( desc=''){
+    cargarTareasFromArray( tareas = [] ){
+        tareas.forEach( (tarea)  => {
+            this._listado[ tarea.id ] = tarea;
+        });
+    }
 
+    crearTarea( desc=''){
         const tarea = new Tarea(desc);
         this._listado[tarea.id] = tarea;
-
     };
 
 

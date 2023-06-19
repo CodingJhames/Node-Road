@@ -17,9 +17,10 @@ const main = async() => {
 
     if( tareasDB ) {
         // establecer las tareas
+        tareas.cargarTareasFromArray( tareasDB );
     }
 
-    await pausa();
+    // await pausa();
 
     do {
         // Imprimir el menú
