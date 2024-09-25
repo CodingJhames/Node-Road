@@ -2,7 +2,7 @@
 
 const { SHELL, HOMEBREW_PREFIX, npm_lifecy_script } = process.env;
 
-const characters = ["Flash", "Superman", "Green Lantern", "Batman"];
+export const characters = ["Flash", "Superman", "Green Lantern", "Batman"];
 
 const [, , , batman] = characters;
 
